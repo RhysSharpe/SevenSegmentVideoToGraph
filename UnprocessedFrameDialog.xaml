@@ -1,0 +1,49 @@
+﻿<Window x:Class="SevenSegmentVideoToGraph.UnprocessedFrameDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SevenSegmentVideoToGraph"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:p = "clr-namespace:SevenSegmentVideoToGraph.Properties"
+        mc:Ignorable="d"
+        Title="{x:Static p:Resources.AppTitleUnprocessedFrames}"
+        Height="450" Width="800"
+        WindowStartupLocation="CenterOwner">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Name="labelFrameIndex" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Margin="12, 0" FontSize="16" Height="Auto" VerticalAlignment="Center" Content="{x:Static p:Resources.UnprocessedFrameIndex}" />
+        <Separator Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Margin="12, 0" VerticalAlignment="Bottom" Background="#FFB4B4B4" />
+
+        <Border Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="3" Margin="12, 12, 12, 0" BorderThickness="1" Background="#FFF4F4F4" BorderBrush="#FFB4B4B4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <Image Name="imageMain" Source="assets/default.png" />
+        </Border>
+
+        <TextBlock Name="textBlockInformation" Grid.Column="2" Grid.Row="1" Grid.RowSpan="3" Margin="12" FontSize="16" Height="Auto" TextWrapping="Wrap" Text="{x:Static p:Resources.UnprocessedFrameRange}" />
+
+        <Label Name="labelFramePath" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4" Margin="12, 0" FontSize="12" Height="Auto" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#FF646464"  />
+        <ToggleButton Name="toggleButtonRepeat" Grid.Column="2" Grid.Row="3" Grid.RowSpan="2" Margin="12, 0" MinHeight="22" MaxHeight="28" Content="{x:Static p:Resources.UnprocessedFrameRepeat}" Click="ButtonToggleClick" />
+
+        <ComboBox Name="comboBoxUnprocessedFrame" Grid.Column="0" Grid.Row="5" Margin="12, 8" ToolTip="{x:Static p:Resources.UnprocessedFrameToolTip}" MinHeight="22" MaxHeight="28" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="ComboBoxUnprocessedFrameSelectionChanged" />
+        <xctk:WatermarkTextBox Name="textBoxValue" Grid.Column="1" Grid.Row="5" Margin="12, 0" FontSize="16" Height="28" PreviewTextInput="TextBoxNumberValidation" Watermark="00.00" TextChanged="textBoxValueTextChanged" />
+        <Button Name="buttonContinue" Content="{x:Static p:Resources.UnprocessedFrameContinue}" Grid.Column="2" Grid.Row="5" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="False" Click="ButtonContinueClick" />
+
+    </Grid>
+
+</Window>

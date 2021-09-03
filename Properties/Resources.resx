@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppInfoExtractingComplete" xml:space="preserve">
+    <value>Extracting finished in {0} seconds.</value>
+  </data>
+  <data name="AppInfoExtractingFrames" xml:space="preserve">
+    <value>Extracting Frames {0}%…</value>
+  </data>
+  <data name="AppInfoExtractingStopped" xml:space="preserve">
+    <value>Extracting was stopped early at {0}% within {1} seconds…</value>
+  </data>
+  <data name="AppInfoMissingFiles" xml:space="preserve">
+    <value>Critical error!
+
+The application failed to find the images at the selected location. The extraction files were tampered with or there might be an issue with the drive.
+
+The application will now close.</value>
+  </data>
+  <data name="AppInfoOcrComplete" xml:space="preserve">
+    <value>OCR process complete.</value>
+  </data>
+  <data name="AppInfoProcessingCompleted" xml:space="preserve">
+    <value>Images have now been processed.</value>
+  </data>
+  <data name="AppInstructions" xml:space="preserve">
+    <value>Select a cropped video (MP4) to translate into a CSV file or graph. You may otherwise select a folder containing previously extracted frames and press the load button. The frames must be named "frame-X" where 'X' is the millisecond timestamp.
+
+The video or frames should only contain the 7 segment numbers as anything else will likely reduce the OCR accuracy. This includes any non-numerical shapes and objects with similar brightness as the digits.
+
+Adjust the frame interval slider to increase or decrease the number of frames to extract from the video. Sliding the slider all the way to the left will extract every frame; this may increase accuracy but at the expense of time.
+
+Adjust the black and white threshold slider to change the extracted frames’ black and white levels. Google's optical character recognition (OCR) works best with high contrast black and white images. Make sure the digits are clearly defined without too many missing pieces and there are no extra parts floating around.
+
+You can navigate through each frame and skip any obvious frames where the value cannot be extracted. Alternatively, you can add minimum and maximum ranges to catch any anomalies. You will be asked to choose what to do with the frames wthat have any issues.
+
+Copyright © 2020 Rhys Sharpe - https://github.com/RhysSharpe</value>
+  </data>
+  <data name="AppTitleError" xml:space="preserve">
+    <value>Seven Segment Video to Graph - Error</value>
+  </data>
+  <data name="AppTitleFinished" xml:space="preserve">
+    <value>Seven Segment Video to Graph - Finished</value>
+  </data>
+  <data name="AppTitleHelp" xml:space="preserve">
+    <value>Seven Segment Video to Graph - Help</value>
+  </data>
+  <data name="AppTitleMain" xml:space="preserve">
+    <value>Seven Segment Video to Graph</value>
+  </data>
+  <data name="AppTitleQuestion" xml:space="preserve">
+    <value>Seven Segment Video to Graph - Question</value>
+  </data>
+  <data name="AppTitleResults" xml:space="preserve">
+    <value>Seven Segment Video to Graph - Results</value>
+  </data>
+  <data name="AppTitleUnprocessedFrames" xml:space="preserve">
+    <value>Seven Segment Video to Graph - Manul Assisted Frames</value>
+  </data>
+  <data name="ExtractionBegin" xml:space="preserve">
+    <value>Begin Extraction</value>
+  </data>
+  <data name="ExtractionBeginError" xml:space="preserve">
+    <value>A video needs to be selected first.</value>
+  </data>
+  <data name="ExtractionBrowse" xml:space="preserve">
+    <value>Select Extraction Location</value>
+  </data>
+  <data name="ExtractionLocationError" xml:space="preserve">
+    <value>Please select a valid directory for the extraction location.</value>
+  </data>
+  <data name="ExtractionOpenFolder" xml:space="preserve">
+    <value>Open Folder</value>
+  </data>
+  <data name="ExtractionPause" xml:space="preserve">
+    <value>Pause Extraction</value>
+  </data>
+  <data name="ExtractionResume" xml:space="preserve">
+    <value>Resume Extraction</value>
+  </data>
+  <data name="ExtractionStop" xml:space="preserve">
+    <value>Stop Extraction</value>
+  </data>
+  <data name="ExtractionToolTipBegin" xml:space="preserve">
+    <value>Begin the extraction process; this can be paused.</value>
+  </data>
+  <data name="ExtractionToolTipBrowse" xml:space="preserve">
+    <value>Select a location for the extracted frames.</value>
+  </data>
+  <data name="ExtractionToolTipOpen" xml:space="preserve">
+    <value>Open the folder dedicated to the extracted video frames.</value>
+  </data>
+  <data name="ExtractionToolTipPause" xml:space="preserve">
+    <value>Pause the extraction process, can be later resumed.</value>
+  </data>
+  <data name="ExtractionToolTipStop" xml:space="preserve">
+    <value>Stop the extraction process early.</value>
+  </data>
+  <data name="FileBrowseVideo" xml:space="preserve">
+    <value>Browse Video</value>
+  </data>
+  <data name="FileSaveCsv" xml:space="preserve">
+    <value>Results.csv</value>
+  </data>
+  <data name="FileSaveGraph" xml:space="preserve">
+    <value>Graph.png</value>
+  </data>
+  <data name="FrameInterval" xml:space="preserve">
+    <value>Frame Extract Interval {0}ms</value>
+  </data>
+  <data name="FrameToolTipInterval" xml:space="preserve">
+    <value>Adjust the number of frames to extract. A larger interval will extract less frames from the video. To extract all frames, set the slider fully to the left.</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Show Help</value>
+  </data>
+  <data name="ImageInclude" xml:space="preserve">
+    <value>Include this Frame</value>
+  </data>
+  <data name="ImageIndex" xml:space="preserve">
+    <value>Current Frame: {0} of {1}</value>
+  </data>
+  <data name="ImageLoad" xml:space="preserve">
+    <value>Load Frames</value>
+  </data>
+  <data name="ImageLoadFail" xml:space="preserve">
+    <value>No images were found in this directory or they did not match this application's naming convention.</value>
+  </data>
+  <data name="ImageLoadQuestion" xml:space="preserve">
+    <value>Have the images already been processed by this application?</value>
+  </data>
+  <data name="ImageNext" xml:space="preserve">
+    <value>Next Frame</value>
+  </data>
+  <data name="ImagePrevious" xml:space="preserve">
+    <value>Previous Frame</value>
+  </data>
+  <data name="ImageProcess" xml:space="preserve">
+    <value>Process Frames</value>
+  </data>
+  <data name="ImageRandom" xml:space="preserve">
+    <value>Display Random Frame</value>
+  </data>
+  <data name="ImageSkip" xml:space="preserve">
+    <value>Skip this Frame</value>
+  </data>
+  <data name="ImageThreshold" xml:space="preserve">
+    <value>Black &amp; White Threshold {0}</value>
+  </data>
+  <data name="ImageToggle" xml:space="preserve">
+    <value>Toggle Black &amp; White</value>
+  </data>
+  <data name="ImageToolTipLoad" xml:space="preserve">
+    <value>Load the frames from the previous extraction folder (may be unprocessed or processed).</value>
+  </data>
+  <data name="ImageToolTipProcess" xml:space="preserve">
+    <value>Begin to apply the black and white threshold to the extracted frames.</value>
+  </data>
+  <data name="ImageToolTipRandom" xml:space="preserve">
+    <value>Display a randomly selected frame.</value>
+  </data>
+  <data name="ImageToolTipSkip" xml:space="preserve">
+    <value>Skip the current image from the OCR phase. Can be used for when it is certain that the OCR will not produce a value.</value>
+  </data>
+  <data name="ImageToolTipThreshold" xml:space="preserve">
+    <value>Change the threshold for the image black and white levels.</value>
+  </data>
+  <data name="ImageToolTipToggle" xml:space="preserve">
+    <value>Toggle the image between displaying in black and white or full colour.</value>
+  </data>
+  <data name="OcrBegin" xml:space="preserve">
+    <value>Begin OCR</value>
+  </data>
+  <data name="OcrToolTipBegin" xml:space="preserve">
+    <value>Begin the optical character recognition (OCR) process.</value>
+  </data>
+  <data name="OcrToolTipValueMax" xml:space="preserve">
+    <value>Enter an optional expected maximum value from the video. Both ranges must be set for it to apply.</value>
+  </data>
+  <data name="OcrToolTipValueMin" xml:space="preserve">
+    <value>Enter an optional expected minimum value from the video. Both ranges must be set for it to apply.</value>
+  </data>
+  <data name="OcrValueMax" xml:space="preserve">
+    <value>Enter an optional max value…</value>
+  </data>
+  <data name="OcrValueMin" xml:space="preserve">
+    <value>Enter an optional min value…</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>You need to have located or extracted the frames first!</value>
+  </data>
+  <data name="ProcessingFrames" xml:space="preserve">
+    <value>Processing Frames {0}%</value>
+  </data>
+  <data name="ProcessingOcr" xml:space="preserve">
+    <value>Running OCR {0}%</value>
+  </data>
+  <data name="ProcessingVideo" xml:space="preserve">
+    <value>Processing Video {0}%</value>
+  </data>
+  <data name="ResultsBack" xml:space="preserve">
+    <value>Return to App</value>
+  </data>
+  <data name="ResultsExportCsv" xml:space="preserve">
+    <value>Export to CSV File</value>
+  </data>
+  <data name="ResultsExportImage" xml:space="preserve">
+    <value>Save Graph as Image</value>
+  </data>
+  <data name="ResultsGraphAnimateFinish" xml:space="preserve">
+    <value>Finish Animation</value>
+  </data>
+  <data name="ResultsGraphAnimateInterval" xml:space="preserve">
+    <value>Graph Update Interval {0}ms</value>
+  </data>
+  <data name="ResultsGraphAnimateIntervalToolTip" xml:space="preserve">
+    <value>Change the number of milliseconds it takes to update the graph.</value>
+  </data>
+  <data name="ResultsGraphAnimatePause" xml:space="preserve">
+    <value>Pause Animation</value>
+  </data>
+  <data name="ResultsGraphAnimateResume" xml:space="preserve">
+    <value>Resume Animation</value>
+  </data>
+  <data name="ResultsGraphAnimateStart" xml:space="preserve">
+    <value>Show Animation</value>
+  </data>
+  <data name="ResultsGraphAxisX" xml:space="preserve">
+    <value>Timestamp (Seconds)</value>
+  </data>
+  <data name="ResultsGraphAxisY" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="ResultsGraphAxisYWatermark" xml:space="preserve">
+    <value>Y Axis Title</value>
+  </data>
+  <data name="ResultsGraphTimestampTooltip" xml:space="preserve">
+    <value>Timestamp: {0:0.00}s</value>
+  </data>
+  <data name="ResultsGraphTitle" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="ResultsGraphTitleWatermark" xml:space="preserve">
+    <value>Graph Title</value>
+  </data>
+  <data name="ResultsGraphValueTooltip" xml:space="preserve">
+    <value>Value: {0}</value>
+  </data>
+  <data name="ResultsImageSize" xml:space="preserve">
+    <value>Export Image Size (W x H)</value>
+  </data>
+  <data name="ResultsImageSizeHeight" xml:space="preserve">
+    <value>Image Height (Pixels)</value>
+  </data>
+  <data name="ResultsImageSizeHeightToolTip" xml:space="preserve">
+    <value>Set the height of the graph export image in pixels. Try increasing the amount if results aren't as expected.</value>
+  </data>
+  <data name="ResultsImageSizeWidth" xml:space="preserve">
+    <value>Image Width (Pixels)</value>
+  </data>
+  <data name="ResultsImageSizeWidthToolTip" xml:space="preserve">
+    <value>Set the width of the graph export image in pixels. Try increasing the amount if results aren't as expected.</value>
+  </data>
+  <data name="ResultsShow" xml:space="preserve">
+    <value>Show Results</value>
+  </data>
+  <data name="ResultsViewChange" xml:space="preserve">
+    <value>Change View</value>
+  </data>
+  <data name="UnprocessedFrameAverage" xml:space="preserve">
+    <value>Use Average Value</value>
+  </data>
+  <data name="UnprocessedFrameContinue" xml:space="preserve">
+    <value>Apply and Continue</value>
+  </data>
+  <data name="UnprocessedFrameCustom" xml:space="preserve">
+    <value>Use Custom Value</value>
+  </data>
+  <data name="UnprocessedFrameFailed" xml:space="preserve">
+    <value>This frame was unable to be recognised by the OCR.</value>
+  </data>
+  <data name="UnprocessedFrameFinish" xml:space="preserve">
+    <value>Apply and Finish</value>
+  </data>
+  <data name="UnprocessedFrameFinished" xml:space="preserve">
+    <value>All frames have now been given a value.</value>
+  </data>
+  <data name="UnprocessedFrameIndex" xml:space="preserve">
+    <value>Select what to do with this unprocessed or skipped frame - {0} of {1}.</value>
+  </data>
+  <data name="UnprocessedFrameNext" xml:space="preserve">
+    <value>Use Next Value</value>
+  </data>
+  <data name="UnprocessedFramePrevious" xml:space="preserve">
+    <value>Use Previous Value</value>
+  </data>
+  <data name="UnprocessedFrameRange" xml:space="preserve">
+    <value>This frame was assigned a value of {0}.
+
+This is outside of the given minimum ({1}) and maximum ({2}) range.</value>
+  </data>
+  <data name="UnprocessedFrameRepeat" xml:space="preserve">
+    <value>Repeat for all {0} Frames</value>
+  </data>
+  <data name="UnprocessedFrameSkipped" xml:space="preserve">
+    <value>This frame was chosen by you to be skipped, as it was assumed that the OCR wouldn't be able to interpret it.</value>
+  </data>
+  <data name="UnprocessedFrameToolTip" xml:space="preserve">
+    <value>Choose what to do with skipped frames and frames that cannot be interpreted.</value>
+  </data>
+  <data name="VideoBrowse" xml:space="preserve">
+    <value>Select a Video</value>
+  </data>
+  <data name="VideoDuration" xml:space="preserve">
+    <value>Duration: {0}</value>
+  </data>
+  <data name="VideoFPS" xml:space="preserve">
+    <value>Frames per Second: {0}</value>
+  </data>
+  <data name="VideoLocationPath" xml:space="preserve">
+    <value>C:\Users\Example\Videos\Example.mp4</value>
+  </data>
+  <data name="VideoOpenFolder" xml:space="preserve">
+    <value>Open Folder</value>
+  </data>
+  <data name="VideoResolution" xml:space="preserve">
+    <value>Resolution: {0} x {1}</value>
+  </data>
+  <data name="VideoSize" xml:space="preserve">
+    <value>Size: {0} MB</value>
+  </data>
+  <data name="VideoTitle" xml:space="preserve">
+    <value>Name: {0}</value>
+  </data>
+  <data name="VideoToolTipOpen" xml:space="preserve">
+    <value>Open the folder containing the selected video.</value>
+  </data>
+  <data name="VideoToolTipSelect" xml:space="preserve">
+    <value>Select a video (of type MP4) to process into a graph.</value>
+  </data>
+</root>

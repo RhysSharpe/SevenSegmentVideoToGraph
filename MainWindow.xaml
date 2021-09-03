@@ -1,0 +1,144 @@
+﻿<Window x:Class="SevenSegmentVideoToGraph.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:SevenSegmentVideoToGraph"
+        xmlns:p = "clr-namespace:SevenSegmentVideoToGraph.Properties"
+        mc:Ignorable="d"
+        Title="{x:Static p:Resources.AppTitleMain}"
+        Height="720" Width="1280"
+        MinHeight="673" MinWidth="1212"
+        KeyDown="WindowKeyDown" MouseDown="WindowMouseDown">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Row One -->
+        <xctk:WatermarkTextBox Name="textBoxLocationVideo" Watermark="{x:Static p:Resources.VideoLocationPath}" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="1" Margin="12, 0" FontSize="16" Height="28" IsReadOnly="True" VerticalAlignment="Center"/>
+        <Button Name="buttonLocationVideoOpen" Content="{x:Static p:Resources.VideoOpenFolder}" Grid.Column="4" Grid.Row="0" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="False" ToolTip="{x:Static p:Resources.VideoToolTipOpen}" Click="ButtonLocationVideoOpenClick"/>
+        <Button Name="buttonLocationVideoBrowse" Content="{x:Static p:Resources.VideoBrowse}" Grid.Column="5" Grid.Row="0" Margin="12, 0" MinHeight="22" MaxHeight="28" ToolTip="{x:Static p:Resources.VideoToolTipSelect}" Click="ButtonLocationVideoBrowseClick"/>
+        <!-- Row One -->
+
+        <!-- Row Two -->
+        <ScrollViewer Grid.Column="0" Grid.Row="1" Margin="12, 0" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto" >
+            <Label Name="labelVideoTitle" FontSize="16" Height="Auto" VerticalAlignment="Center" Content="{x:Static p:Resources.VideoTitle}" />
+        </ScrollViewer>
+        <Label Name="labelVideoFPS" Grid.Column="1" Grid.Row="1" Margin="12, 0" FontSize="16" Height="Auto" VerticalAlignment="Center" Content="{x:Static p:Resources.VideoFPS}" />
+        <Label Name="labelVideoWidthHeight" Grid.Column="2" Grid.Row="1" Margin="12, 0" FontSize="16" Height="Auto" VerticalAlignment="Center" Content="{x:Static p:Resources.VideoResolution}" />
+        <Label Name="labelVideoDuration" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="1" Margin="12, 0" FontSize="16" Height="Auto" VerticalAlignment="Center" Content="{x:Static p:Resources.VideoDuration}" />
+        <Label Name="labelVideoSize" Grid.Column="5" Grid.Row="1" Margin="12, 0" FontSize="16" Height="Auto" VerticalAlignment="Center" Content="{x:Static p:Resources.VideoSize}" />
+        <Separator Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6" Margin="12, 0" VerticalAlignment="Top" Background="#FFB4B4B4" />
+
+        <Rectangle Grid.Row="2" Grid.RowSpan="18" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Right" Margin="0, 12" Fill="#FFB4B4B4" Width="1"/>
+        <!-- Row Two -->
+
+        <!-- Row Three -->
+        <xctk:WatermarkTextBox Name="textBoxLocationExtraction" IsReadOnly="True" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="2" Margin="12, 0" FontSize="16" Height="28" VerticalAlignment="Center"/>
+        <Button Name="buttonLocationExtractionOpen" Content="{x:Static p:Resources.ExtractionOpenFolder}" Grid.Column="4" Grid.Row="2" Margin="12, 0" IsEnabled="False" MinHeight="22" MaxHeight="28" ToolTip="{x:Static p:Resources.ExtractionToolTipOpen}" Click="ButtonLocationExtractionOpenClick" />
+        <Button Name="buttonLocationExtractionBrowse" Content="{x:Static p:Resources.ExtractionBrowse}" Grid.Column="5" Grid.Row="2" Margin="12, 0" MinHeight="22" MaxHeight="28" ToolTip="{x:Static p:Resources.ExtractionToolTipBrowse}" Click="ButtonLocationExtractionBrowseClick"/>
+        <!-- Row Three -->
+        
+        <!-- Row Four -->
+        <Button Name="buttonImageToggle" Content="{x:Static p:Resources.ImageToggle}" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="false" ToolTip="{x:Static p:Resources.ImageToolTipToggle}" Click="ButtonImageToggleClick"/>
+        <Button Name="buttonImageLoad" Content="{x:Static p:Resources.ImageLoad}" Grid.Column="1" Grid.Row="3" Grid.RowSpan="2" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="false" ToolTip="{x:Static p:Resources.ImageToolTipLoad}" Click="ButtonImageLoadClick"/>
+        <Button Name="buttonImageSkip" Content="{x:Static p:Resources.ImageSkip}" Grid.Column="2" Grid.Row="3" Grid.RowSpan="2" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="false" ToolTip="{x:Static p:Resources.ImageToolTipSkip}" Click="ButtonImageSkipClick"/>
+        <Label Name="labelImageIndex" Content="{x:Static p:Resources.ImageIndex}" Grid.Column="3"  Grid.ColumnSpan="2" Grid.Row="3" Grid.RowSpan="2" Margin="12, 0" FontSize="16" Height="Auto" VerticalAlignment="Center" IsEnabled="False" />
+        <!-- Row Four -->
+
+        <!-- Row Four & Five -->
+        <Label Name="labelFrameInterval" Grid.Column="5" Grid.Row="3" Grid.RowSpan="2" Margin="12, 0" HorizontalAlignment="Center" IsEnabled="False" Content="{x:Static p:Resources.FrameInterval}" />
+        <Slider Name="sliderFrameInterval" Grid.Column="5" Grid.Row="4" Margin="12, 0" Minimum="1" Maximum="10" LargeChange="1" SmallChange="0.1" TickFrequency="0.5" TickPlacement="BottomRight" IsEnabled="False" ToolTip="{x:Static p:Resources.FrameToolTipInterval}" ValueChanged="SliderFrameIntervalValueChanged" />
+        <!-- Row Four & Five -->
+
+        <!-- Row Six -->
+        <Button Name="buttonExtractionBeginPause" Content="{x:Static p:Resources.ExtractionBegin}" Grid.Column="5" Grid.Row="5" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="False" ToolTip="{x:Static p:Resources.ExtractionToolTipBegin}" Click="ButtonExtractionBeginPauseClick"/>
+
+        <Border Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="5" Grid.RowSpan="13" Margin="12" BorderThickness="1" Background="#FFF4F4F4" BorderBrush="#FFB4B4B4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <Image Name="imageMain" Source="assets/default.png" />
+        </Border>
+        <!-- Row Six -->
+
+        <!-- Row Seven -->
+        <Button Name="buttonExtractionStop" Content="{x:Static p:Resources.ExtractionStop}" Grid.Column="5" Grid.Row="6" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="False" ToolTip="{x:Static p:Resources.ExtractionToolTipStop}" Click="ButtonExtractionStopClick"/>
+        <!-- Row Seven -->
+        
+        <Separator Grid.Row="7" Grid.Column="6" Margin="12, 0" VerticalAlignment="Center" Background="#FFB4B4B4" />
+
+        <!-- Row Eight -->
+        <Button Name="buttonImageProcess" Content="{x:Static p:Resources.ImageProcess}" Grid.Column="5" Grid.Row="8" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="False" ToolTip="{x:Static p:Resources.ImageToolTipProcess}" Click="ButtonImageProcessClick"/>
+        <!-- Row Eight -->
+
+        <Separator Grid.Row="9" Grid.Column="6" Margin="12, 0" VerticalAlignment="Center" Background="#FFB4B4B4" />
+
+        <!-- Row Nine & Ten -->
+        <xctk:WatermarkTextBox Name="textBoxOcrValueMin" Grid.Column="5" Grid.Row="10" Margin="12, 0" FontSize="16" Height="28" IsEnabled="False" Watermark="{x:Static p:Resources.OcrValueMin}" ToolTip="{x:Static p:Resources.OcrToolTipValueMin}" PreviewTextInput="TextBoxNumberValidation" LostFocus="TextBoxOcrValueLostFocus" />
+        <xctk:WatermarkTextBox Name="textBoxOcrValueMax" Grid.Column="5" Grid.Row="11" Margin="12, 0" FontSize="16" Height="28" IsEnabled="False" Watermark="{x:Static p:Resources.OcrValueMax}" ToolTip="{x:Static p:Resources.OcrToolTipValueMax}" PreviewTextInput="TextBoxNumberValidation" LostFocus="TextBoxOcrValueLostFocus" />
+        <!-- Row Nine & Ten -->
+        
+        <!-- Row Eleven -->
+        <Button Name="buttonOcrBegin" Content="{x:Static p:Resources.OcrBegin}" Grid.Column="5" Grid.Row="12" Grid.RowSpan="1" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="False" ToolTip="{x:Static p:Resources.OcrToolTipBegin}" Click="ButtonOcrBeginClick"/>
+        <!-- Row Eleven -->
+
+        <Separator Grid.Row="13" Grid.Column="6" Margin="12, 0" VerticalAlignment="Center" Background="#FFB4B4B4" />
+
+        <!-- Row Twelve -->
+        <Button Name="buttonResultsShow" Content="{x:Static p:Resources.ResultsShow}" Grid.Column="5" Grid.Row="14" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="False" Click="ButtonResultsShowClick"/>
+        <!-- Row Twelve -->
+        
+        <Separator Grid.Row="15" Grid.Column="6" Margin="12, 0" VerticalAlignment="Center" Background="#FFB4B4B4" />
+
+        <!-- Row Thirteen -->
+        <Button Name="buttonImageRandom" Content="{x:Static p:Resources.ImageRandom}" Grid.Column="0" Grid.Row="18" Grid.RowSpan="2" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="False" ToolTip="{x:Static p:Resources.ImageToolTipRandom}" Click="ButtonImageRandomClick"/>
+
+        <Label Name="labelImageThreshold" Grid.Column="1" Grid.Row="18" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="12, 0" HorizontalAlignment="Center" VerticalAlignment="Top" IsEnabled="False" Content="{x:Static p:Resources.ImageThreshold}" />
+        <Slider Name="sliderImageThreshold" Grid.Column="1" Grid.Row="19" Grid.ColumnSpan="2" Margin="12, 0" Maximum="1" LargeChange="0.1" SmallChange="0.01" TickFrequency="0.05" TickPlacement="BottomRight" IsEnabled="False" Value="0.54" ToolTip="{x:Static p:Resources.ImageToolTipThreshold}" ValueChanged="SliderImageThresholdValueChanged" />
+
+        <Button Name="buttonImagePevious" Content="{x:Static p:Resources.ImagePrevious}" Grid.Column="3" Grid.Row="18" Grid.RowSpan="2" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="False" Click="ButtonImagePreviousClick"/>
+        <Button Name="buttonImageNext" Content="{x:Static p:Resources.ImageNext}" Grid.Column="4" Grid.Row="18" Grid.RowSpan="2" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="False" Click="ButtonImageNextClick"/>
+        
+        <Button Name="buttonHelp" Content="{x:Static p:Resources.Help}" Grid.Column="6" Grid.Row="18" Grid.RowSpan="2" Margin="12, 0" MinHeight="22" MaxHeight="28" Click="ButtonHelpClick"/>
+        <!-- Row Thirteen -->
+        
+        <!-- Row Fourteen -->
+        <Label Name="labelAppInformation" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="20" FontSize="12" Height="Auto" VerticalAlignment="Bottom" Margin="8, 0" Content="" />
+        <ProgressBar Name="progressBarAppInformation" Grid.Column="5" Grid.Row="20" Margin="12, 8" />
+        <Separator Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="6" Margin="12, 2" VerticalAlignment="Top" Background="#FFB4B4B4" />
+        <!-- Row Fourteen -->
+
+    </Grid>
+    
+</Window>
