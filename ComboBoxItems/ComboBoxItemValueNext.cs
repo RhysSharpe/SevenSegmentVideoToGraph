@@ -14,17 +14,29 @@
 
         public override double? Calculate()
         {
-            if (unprocessedFrameDisplayHelper.ImageIndex < unprocessedFrameDisplayHelper.Frames.Count - 1)
+            double? returnValue = null;
+            int index = unprocessedFrameDisplayHelper.ImageIndex;
+
+            while (!returnValue.HasValue)
             {
-                if (unprocessedFrameDisplayHelper.Frames[unprocessedFrameDisplayHelper.ImageIndex + 1].Value != null)
+                if (index < unprocessedFrameDisplayHelper.Frames.Count - 1)
                 {
-                    IsEnabled = true;
-                    return unprocessedFrameDisplayHelper.Frames[unprocessedFrameDisplayHelper.ImageIndex + 1].Value;
+                    index++;
+                    FrameData frame = unprocessedFrameDisplayHelper.Frames[index];
+                    if (frame.Value != null && !frame.IsOutsideRange())
+                    {
+                        IsEnabled = true;
+                        returnValue = frame.Value;
+                    }
+                }
+                else
+                {
+                    IsEnabled = false;
+                    return base.Calculate();
                 }
             }
 
-            IsEnabled = false;
-            return base.Calculate();
+            return returnValue;
         }
     }
 }

@@ -29,6 +29,7 @@ namespace SevenSegmentVideoToGraph
             frameDisplayHelper = new UnprocessedFrameDisplayHelper(frames, unprocessedFramesIndex.ToArray());
             UpdateUserInterface();
 
+            // Add a skip in future
             comboBoxSelectionValues = new List<ComboBoxItemValue>();
             comboBoxSelectionValues.Add(new ComboBoxItemValuePrevious(frameDisplayHelper));
             comboBoxSelectionValues.Add(new ComboBoxItemValueNext(frameDisplayHelper));
