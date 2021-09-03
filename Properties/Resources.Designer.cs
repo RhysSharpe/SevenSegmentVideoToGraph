@@ -690,6 +690,15 @@ namespace SevenSegmentVideoToGraph.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pause or resume the graph animation..
+        /// </summary>
+        public static string ResultsGraphAnimatePauseResumeToolTip {
+            get {
+                return ResourceManager.GetString("ResultsGraphAnimatePauseResumeToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Resume Animation.
         /// </summary>
         public static string ResultsGraphAnimateResume {
@@ -830,6 +839,15 @@ namespace SevenSegmentVideoToGraph.Properties {
         public static string ResultsViewChange {
             get {
                 return ResourceManager.GetString("ResultsViewChange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change between CSV and Graph views..
+        /// </summary>
+        public static string ResultsViewChangeToolTip {
+            get {
+                return ResourceManager.GetString("ResultsViewChangeToolTip", resourceCulture);
             }
         }
         

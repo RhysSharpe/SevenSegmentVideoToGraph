@@ -66,14 +66,14 @@
 
         <Rectangle Grid.Row="0" Grid.RowSpan="18" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Right" Margin="0, 12" Fill="#FFB4B4B4" Width="1"/>
 
-        <Button Name="buttonExportCsv" Content="{x:Static p:Resources.ResultsExportCsv}" Grid.Column="1" Grid.Row="0" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.VideoToolTipOpen}" Click="ButtonExportCsvClick"/>
-        <Button Name="buttonExportImage" Content="{x:Static p:Resources.ResultsExportImage}" Grid.Column="1" Grid.Row="1" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.VideoToolTipOpen}" Click="ButtonExportImageClick"/>
+        <Button Name="buttonExportCsv" Content="{x:Static p:Resources.ResultsExportCsv}" Grid.Column="1" Grid.Row="0" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.ResultsExportCsv}" Click="ButtonExportCsvClick"/>
+        <Button Name="buttonExportImage" Content="{x:Static p:Resources.ResultsExportImage}" Grid.Column="1" Grid.Row="1" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.ResultsExportImage}" Click="ButtonExportImageClick"/>
 
-        <Button Name="buttonViewChange" Content="{x:Static p:Resources.ResultsViewChange}" Grid.Column="1" Grid.Row="3" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.VideoToolTipOpen}" Click="ButtonViewChangeClick"/>
+        <Button Name="buttonViewChange" Content="{x:Static p:Resources.ResultsViewChange}" Grid.Column="1" Grid.Row="3" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.ResultsViewChangeToolTip}" Click="ButtonViewChangeClick"/>
 
-        <Button Name="buttonGraphAnimateStart" Content="{x:Static p:Resources.ResultsGraphAnimateStart}" Grid.Column="1" Grid.Row="5" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.VideoToolTipOpen}" Click="ButtonGraphAnimateStartClick"/>
-        <Button Name="buttonGraphAnimatePause" Content="{x:Static p:Resources.ResultsGraphAnimatePause}" Grid.Column="1" Grid.Row="6" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.VideoToolTipOpen}" Click="ButtonGraphAnimatePauseClick"/>
-        <Button Name="buttonGraphAnimateFinish" Content="{x:Static p:Resources.ResultsGraphAnimateFinish}" Grid.Column="1" Grid.Row="7" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.VideoToolTipOpen}" Click="ButtonGraphAnimateFinishClick"/>
+        <Button Name="buttonGraphAnimateStart" Content="{x:Static p:Resources.ResultsGraphAnimateStart}" Grid.Column="1" Grid.Row="5" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.ResultsGraphAnimateStart}" Click="ButtonGraphAnimateStartClick"/>
+        <Button Name="buttonGraphAnimatePause" Content="{x:Static p:Resources.ResultsGraphAnimatePause}" Grid.Column="1" Grid.Row="6" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.ResultsGraphAnimatePauseResumeToolTip}" Click="ButtonGraphAnimatePauseClick"/>
+        <Button Name="buttonGraphAnimateFinish" Content="{x:Static p:Resources.ResultsGraphAnimateFinish}" Grid.Column="1" Grid.Row="7" Margin="12, 0" MinHeight="22" MaxHeight="28" IsEnabled="True" ToolTip="{x:Static p:Resources.ResultsGraphAnimateFinish}" Click="ButtonGraphAnimateFinishClick"/>
 
         <Label Name="labelGraphInterval" Grid.Column="1" Grid.Row="8" Grid.RowSpan="2" Margin="12, 0" HorizontalAlignment="Center" IsEnabled="True" Content="{x:Static p:Resources.ResultsGraphAnimateInterval}" />
         <Slider Name="sliderGraphInterval" Grid.Column="1" Grid.Row="9" Margin="12, 0" Minimum="100" Maximum="2000" LargeChange="100" SmallChange="10" TickFrequency="50" TickPlacement="BottomRight" IsEnabled="True" ToolTip="{x:Static p:Resources.ResultsGraphAnimateIntervalToolTip}" ValueChanged="SliderGraphIntervalValueChanged" />

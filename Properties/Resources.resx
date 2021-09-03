@@ -338,6 +338,9 @@ Copyright © 2020 Rhys Sharpe - https://github.com/RhysSharpe</value>
   <data name="ResultsGraphAnimatePause" xml:space="preserve">
     <value>Pause Animation</value>
   </data>
+  <data name="ResultsGraphAnimatePauseResumeToolTip" xml:space="preserve">
+    <value>Pause or resume the graph animation.</value>
+  </data>
   <data name="ResultsGraphAnimateResume" xml:space="preserve">
     <value>Resume Animation</value>
   </data>
@@ -385,6 +388,9 @@ Copyright © 2020 Rhys Sharpe - https://github.com/RhysSharpe</value>
   </data>
   <data name="ResultsViewChange" xml:space="preserve">
     <value>Change View</value>
+  </data>
+  <data name="ResultsViewChangeToolTip" xml:space="preserve">
+    <value>Change between CSV and Graph views.</value>
   </data>
   <data name="UnprocessedFrameAverage" xml:space="preserve">
     <value>Use Average Value</value>
