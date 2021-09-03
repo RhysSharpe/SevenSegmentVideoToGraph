@@ -627,6 +627,15 @@ namespace SevenSegmentVideoToGraph.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No results have a value from the OCR..
+        /// </summary>
+        public static string ResultsError {
+            get {
+                return ResourceManager.GetString("ResultsError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Export to CSV File.
         /// </summary>
         public static string ResultsExportCsv {

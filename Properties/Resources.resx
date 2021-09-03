@@ -317,6 +317,9 @@ Copyright © 2020 Rhys Sharpe - https://github.com/RhysSharpe</value>
   <data name="ResultsBack" xml:space="preserve">
     <value>Return to App</value>
   </data>
+  <data name="ResultsError" xml:space="preserve">
+    <value>No results have a value from the OCR.</value>
+  </data>
   <data name="ResultsExportCsv" xml:space="preserve">
     <value>Export to CSV File</value>
   </data>

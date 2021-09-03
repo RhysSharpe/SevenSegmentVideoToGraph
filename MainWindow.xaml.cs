@@ -259,9 +259,23 @@ namespace SevenSegmentVideoToGraph
 
         private void ButtonResultsShowClick(object sneder, RoutedEventArgs e)
         {
-            ResultWindow resultWindow = new ResultWindow(frameDisplayHelper.Frames);
-            resultWindow.Owner = this;
-            resultWindow.ShowDialog();
+            List<FrameData> actualResults = new List<FrameData>();
+            for (int i = 0; frameDisplayHelper.Frames.Count > i; i++)
+            {
+                if (!frameDisplayHelper.Frames[i].GetOcrFailed())
+                    actualResults.Add(frameDisplayHelper.Frames[i]);
+            }
+
+            if (actualResults.Count > 0)
+            {
+                ResultWindow resultWindow = new ResultWindow(actualResults);
+                resultWindow.Owner = this;
+                resultWindow.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show(Properties.Resources.ResultsError, Properties.Resources.AppTitleError, MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         #endregion

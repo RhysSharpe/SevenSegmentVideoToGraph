@@ -243,7 +243,8 @@ namespace SevenSegmentVideoToGraph
             // https://lvcharts.net/App/examples/v1/wpf/Performance%20Tips
             ObservablePoint[] temporalChartValues = new ObservablePoint[frames.Length];
             for (int i = 0; i < frames.Length; i++)
-                temporalChartValues[i] = new ObservablePoint(frames[i].Timestamp / 1000, (double)frames[i].Value);
+                if (!frames[i].GetOcrFailed())
+                    temporalChartValues[i] = new ObservablePoint(frames[i].Timestamp / 1000, (double)frames[i].Value);
             chartValues.AddRange(temporalChartValues);
 
             stepLineSeries.Title = Properties.Resources.ResultsGraphTitle;
