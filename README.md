@@ -9,10 +9,10 @@ The program would benefit from some extra testing as it has only been used on on
 # Media
 
 Demo
-[![Demo Video](https://lh4.googleusercontent.com/-0SX4xQlDTpvmFxJiE8ge5U70I5X7PtuxkswxPFvxEjVebLEK0xt3meEVZPRbK7xSF_6HF-CkWG2cA=w1920-h937-rw)](https://www.youtube.com/watch?v=Na-HmEQlUKw)
+[![Demo Video](https://www.mediafire.com/convkey/9524/98wm4da7ax7nu8x9g.jpg)](https://www.youtube.com/watch?v=Na-HmEQlUKw)
 
 Example Results
-![alt text](https://lh3.googleusercontent.com/ozHXVi0zDUhyudhkPlsjFyYhO8BOv1ACic-OENXU_8yBvfH6xeh9L2orlbkJAWE5OC3Wpg5XdCnPnw=w1920-h937-rw)
+![alt text](https://www.mediafire.com/convkey/04cb/nyy27x1333c97ns9g.jpg)
 
 # Thanks
 
